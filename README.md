@@ -22,19 +22,14 @@ curl -L https://go.dev/dl/go1.22.7.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/
 echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.profile
 source .profile
 ```
-Node Installation
 
-Node Name
-
-Your Node Name
-Port prefix
-
-216
-# Clone project repository
+**Clone project repository**
+```
 cd && rm -rf ojo
 git clone https://github.com/ojo-network/ojo
 cd ojo
 git checkout v0.1.2
+```
 
 # Build binary
 make install
