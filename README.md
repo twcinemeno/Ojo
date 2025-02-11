@@ -36,9 +36,11 @@ git checkout v0.1.2
 make install
 ```
 
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.ojo/cosmovisor/genesis/bin
 ln -s $HOME/.ojo/cosmovisor/genesis $HOME/.ojo/cosmovisor/current -f
+```
 
 # Copy binary to cosmovisor directory
 cp $(which ojod) $HOME/.ojo/cosmovisor/genesis/bin
