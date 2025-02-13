@@ -42,8 +42,10 @@ mkdir -p $HOME/.ojo/cosmovisor/genesis/bin
 ln -s $HOME/.ojo/cosmovisor/genesis $HOME/.ojo/cosmovisor/current -f
 ```
 
-# Copy binary to cosmovisor directory
+**Copy binary to cosmovisor directory**
+```
 cp $(which ojod) $HOME/.ojo/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 ojod config chain-id ojo-devnet
