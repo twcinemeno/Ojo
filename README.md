@@ -88,9 +88,11 @@ sed -i \
 ```
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.ojo/config/config.toml
 ```
-# Change ports
+**Change ports**
+```
 sed -i -e "s%:1317%:21617%; s%:8080%:21680%; s%:9090%:21690%; s%:9091%:21691%; s%:8545%:21645%; s%:8546%:21646%; s%:6065%:21665%" $HOME/.ojo/config/app.toml
 sed -i -e "s%:26658%:21658%; s%:26657%:21657%; s%:6060%:21660%; s%:26656%:21656%; s%:26660%:21661%" $HOME/.ojo/config/config.toml
+```
 
 # Download latest chain data snapshot
 curl "https://snapshots-testnet.nodejumper.io/ojo/ojo_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.ojo"
