@@ -128,10 +128,12 @@ sudo systemctl daemon-reload
 sudo systemctl enable ojo.service
 ```
 
-# Start the service and check the logs
+**Start the service and check the logs**
+```
 sudo systemctl start ojo.service
 sudo journalctl -u ojo.service -f --no-hostname -o cat
 Secure Server Setup (Optional)
+```
 
 # generate ssh keys, if you don't have them already, DO IT ON YOUR LOCAL MACHINE
 ssh-keygen -t rsa
